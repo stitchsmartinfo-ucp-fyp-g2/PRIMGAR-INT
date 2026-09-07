@@ -23,11 +23,12 @@ class AdminModel {
     }
 
     public function getAll(string $table): array {
-        $allowed = ['faqs', 'services', 'products', 'testimonials'];
+        $allowed = ['faqs', 'services', 'products', 'testimonials', 'web_images'];
         if (!in_array($table, $allowed, true)) {
             return [];
         }
-        $stmt = $this->db->query("SELECT * FROM $table ORDER BY display_order ASC");
+        $orderBy = in_array($table, ['faqs', 'testimonials']) ? 'ORDER BY display_order ASC' : 'ORDER BY id ASC';
+        $stmt = $this->db->query("SELECT * FROM $table $orderBy");
         return $stmt->fetchAll();
     }
 
