@@ -12,8 +12,10 @@ class Database {
     public static function getInstance(array $config): PDO {
         if (self::$instance === null) {
             try {
-                $dsn = "mysql:host={$config['host']};dbname={$config['name']};charset=utf8mb4";
-                self::$instance = new PDO($dsn, $config['user'], $config['pass'], [
+                // Modified for Vercel: Always use SQLite
+                $dbPath = dirname(__DIR__, 2) . '/storage/database.sqlite';
+                $dsn = "sqlite:" . $dbPath;
+                self::$instance = new PDO($dsn, null, null, [
                     PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
                     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
                     PDO::ATTR_EMULATE_PREPARES   => false,
