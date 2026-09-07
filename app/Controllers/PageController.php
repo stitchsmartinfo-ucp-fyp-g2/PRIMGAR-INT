@@ -21,16 +21,22 @@ final class PageController
         $errorMessage = $_SESSION['flash_error'] ?? '';
         unset($_SESSION['flash_success'], $_SESSION['flash_error']);
 
-        // Vercel deployment: disabled DB to avoid Connection Refused
-        // $config = require __DIR__ . '/../../config/app.php';
-        // $db = \App\Core\Database::getInstance($config['database']);
-        // $model = new \App\Models\AdminModel($db);
+        $config = require __DIR__ . '/../../config/app.php';
+        $db = \App\Core\Database::getInstance($config['database']);
+        $model = new \App\Models\AdminModel($db);
 
-        $faqs = [];
-        $testimonials = [];
-        $services = [];
-        $products = [];
+        $faqs = $model->getAll('faqs');
+        $testimonials = $model->getAll('testimonials');
+        $services = $model->getAll('services');
+        $products = $model->getAll('products');
+
+        $all_images = $model->getAll('web_images');
         $web_images = [];
+        if (is_array($all_images)) {
+            foreach ($all_images as $img) {
+                $web_images[$img['section_name']][] = $img;
+            }
+        }
 
         require __DIR__ . '/../Views/pages/' . $page . '.php';
     }
