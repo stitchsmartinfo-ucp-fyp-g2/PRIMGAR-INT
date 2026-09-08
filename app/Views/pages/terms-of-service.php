@@ -10,7 +10,7 @@
     <h1 style="margin:45px 0 20px;">Terms of Service</h1>
     <p>RFQ submissions are requests for information and do not create a production agreement or guarantee pricing, availability, or delivery dates.</p>
     <h2 style="margin-top:30px;">Quotes and orders</h2><p>Final pricing, minimum order quantities, samples, timelines, specifications, and payment terms are confirmed in writing before production begins.</p>
-    <h2 style="margin-top:30px;">Contact</h2><p>For questions, email <a href="mailto:primgarinternational@gmail.com">primgarinternational@gmail.com</a>.</p>
+    <h2 style="margin-top:30px;">Contact</h2><p>For questions, email <a href="mailto:primgarinternationals@gmail.com">primgarinternationals@gmail.com</a>.</p>
   </div></main>
   <?php include __DIR__ . '/../partials/footer.php'; ?>
 </body></html>

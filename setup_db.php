@@ -139,10 +139,10 @@ try {
     }
 
     $stmt = $pdo->prepare("SELECT id FROM users WHERE email = ?");
-    $stmt->execute(['primgarinternational@gmail.com']);
+    $stmt->execute(['primgarinternationals@gmail.com']);
     if (!$stmt->fetch()) {
         $hash = password_hash('Admin123!', PASSWORD_DEFAULT);
-        $pdo->prepare("INSERT INTO users (email, password, role) VALUES (?, ?, 'admin')")->execute(['primgarinternational@gmail.com', $hash]);
+        $pdo->prepare("INSERT INTO users (email, password, role) VALUES (?, ?, 'admin')")->execute(['primgarinternationals@gmail.com', $hash]);
     }
 
     echo "Database setup complete.\n";
