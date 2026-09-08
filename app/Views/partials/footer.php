@@ -135,7 +135,7 @@
       </div>
       <div class="contact-text" style="margin-bottom: 15px; display: flex; align-items: flex-start; gap: 12px;">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--red-accent, #E51A23)" stroke-width="2" style="margin-top: 2px; flex-shrink: 0;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-        <p style="margin: 0;"><a href="mailto:primgarinternationals@gmail.com" style="color: #ccc; text-decoration: none;">primgarinternationals@gmail.com</a></p>
+        <p style="margin: 0;"><a href="mailto:primgarintl@gmail.com" style="color: #ccc; text-decoration: none;">primgarintl@gmail.com</a></p>
       </div>
       <div class="contact-text" style="display: flex; align-items: flex-start; gap: 12px;">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--red-accent, #E51A23)" stroke-width="2" style="margin-top: 2px; flex-shrink: 0;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>

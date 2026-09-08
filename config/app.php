@@ -22,9 +22,9 @@ return [
         'port' => (int) $env('MAIL_PORT', '587'),
         'username' => $env('MAIL_USERNAME'),
         'password' => $env('MAIL_PASSWORD'),
-        'from_address' => $env('MAIL_FROM_ADDRESS', 'primgarinternationals@gmail.com'),
+        'from_address' => $env('MAIL_FROM_ADDRESS', 'primgarintl@gmail.com'),
         'from_name' => $env('MAIL_FROM_NAME', 'Primgar International'),
-        'to_address' => $env('MAIL_TO_ADDRESS', 'primgarinternationals@gmail.com'),
+        'to_address' => $env('MAIL_TO_ADDRESS', 'primgarintl@gmail.com'),
         'to_name' => $env('MAIL_TO_NAME', 'Primgar International Sales'),
     ],
 ];

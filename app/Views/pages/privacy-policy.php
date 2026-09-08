@@ -11,7 +11,7 @@
     <p>We use the information you submit through our RFQ form only to prepare and respond to your manufacturing enquiry.</p>
     <h2 style="margin-top:30px;">Information we collect</h2><p>Your name, email address, phone number, garment requirements, and quotation details.</p>
     <h2 style="margin-top:30px;">How we use it</h2><p>To contact you about your RFQ, prepare a quote, and provide customer support. We do not sell your personal information.</p>
-    <h2 style="margin-top:30px;">Contact</h2><p>For privacy questions, email <a href="mailto:primgarinternationals@gmail.com">primgarinternationals@gmail.com</a>.</p>
+    <h2 style="margin-top:30px;">Contact</h2><p>For privacy questions, email <a href="mailto:primgarintl@gmail.com">primgarintl@gmail.com</a>.</p>
   </div></main>
   <?php include __DIR__ . '/../partials/footer.php'; ?>
 </body></html>
